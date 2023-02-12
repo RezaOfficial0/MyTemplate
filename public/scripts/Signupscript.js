@@ -4,10 +4,12 @@ Submit = () => {
     enterEmail =  document.getElementById('inemail');
     enterPassword =  document.getElementById('inpassword');
 
-   const rfirstName = "Admin";
-   const rlastName = "User";
-   const remail = "user@example.com";
-   const Password = "Admin1234"
+    const user = {
+   rfirstName : "admin",
+   rlastName : "user",
+   remail : "user@example.com",
+   rpassword : "Admin1234",
+    }
 
     if (enterFirstName.value == "") {
         document.getElementById('error1').innerHTML = "First Name cannot be empty"
@@ -26,13 +28,16 @@ Submit = () => {
      enterPassword.style.background = 'url("./images/icon-error.svg") no-repeat right'
     }
 
-    else if (enterFirstName.value == "Admin"
-     && enterLastName.value == "User" 
-     && enterEmail.value == "user@example.com" 
-     && enterPassword.value == "Admin1234")
+    else if (
+        enterFirstName.value == user.rfirstName
+     && enterLastName.value == user.rlastName 
+     && enterEmail.value == user.remail 
+     && enterPassword.value == user.rpassword
+     )
      {
-        window.location.assign("../Main.html")
+        window.location.assign("../public/Main.html")
     }
+    
  
 
 }
