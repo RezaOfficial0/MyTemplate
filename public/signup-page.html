@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  <title>Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="stylesheet" href="./styles/Signupstyle.css"/>
+</head>
+<body>
+  <div class="app">
+  <div class="left">
+ <h1 id="Heading">Learn to code by<br> watching others</h1> 
+
+ <p id="prg"> See how experienced developers solve problems in real-time.<br>
+   Watching scripted tutorials is great, 
+  but understanding how<br> developers think is invaluable. </p>
+
+</div>
+
+  
+<div class="right">
+ <div id="trytag"> <span>Try it free 7 days </span> then $20/mo. thereafter </div>
+<div id="inputs">
+
+  <div id="inputer">
+  <input type="text" id="infirstname" placeholder="First Name"></input>
+ <p id="error1"></p>
+  <input type="text" id="inlastname" placeholder="Last Name"></input>
+  <p id="error2"></p>
+  <input type="email" id="inemail" placeholder="Email Address"></input>
+  <p id="error3"></p>
+  <input type="password" id="inpassword" placeholder="Password"></input>
+  <p id="error4"></p>
+</div>
+  
+  <button type="submit" onclick=Submit() id="claim-btn">Claim your free trial</button>
+
+ <p id="terms"> By clicking the button, you are agreeing to our <span id="terms-span">Terms and Services</span></p>
+</div>
+</div>
+</div>
+
+</body>
+<script src="./scripts/Signupscript.js"></script>
+</html>

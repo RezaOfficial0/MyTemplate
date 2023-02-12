@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+     background-image: url("../images/bg-intro-desktop.png");
+     background-color: #f57979;
+     font-family: 'Poppins', sans-serif;
+    }
+
+.app {
+     display: flex;
+     flex-direction: row;
+
+}
+.app .left {
+     float: left;
+color: white;
+padding: 150px;
+margin-top: 250px;
+margin-left: 450px;
+
+}
+.app .left #Heading {
+font-size: 60px;
+}
+.app .left #prg {
+font-size: 20px;
+}
+.app .right {
+     float: right;
+     margin-right: 250px;
+     margin-top: 200px;
+     
+     
+}
+.app .right #inputs {
+     background: white;
+     width: 600px;
+     padding: 35px;
+     border-radius: 30px;
+}
+.app .right #trytag {
+color: white;
+background-color: hsl(248, 32%, 49%);
+padding: 20px;
+margin-bottom: 15px;
+border-radius: 18px;
+}
+.app .right #trytag span {
+     font-weight: bolder;
+     font-size: larger;
+}.app .right #inputs {
+     text-align: center;
+}
+.app .right #inputs input {
+width:575px;
+margin-top: 15px;
+height: 50px;
+padding: 10px;
+
+
+}
+.app .right #inputs #infirstname {
+   background:none ;
+     }
+     .app .right #inputs #inlastname {
+          background:none ;
+          }
+          .app .right #inputs #inemail {
+               background:none ;
+               }
+               .app .right #inputs #inpassword {
+                    background: none;
+                    }
+                    
+.app .right #inputs input:hover{
+  border: 2px solid hsl(249, 10%, 26%) ;
+     }
+     
+
+
+.app .right #inputs #claim-btn {
+width: 575px;
+height: 50px;
+color: white;
+background-color: hsl(154, 59%, 51%);
+border: none;
+border-radius: 5px;
+margin-top: 25px;
+}
+.app .right #inputs #claim-btn:hover {
+     opacity: 0.5;
+}
+.app .right #inputs #terms {
+     color: hsl(246, 25%, 77%);
+}
+.app .right #inputs #terms span {
+     color: hsl(0, 100%, 74%) ;
+}
+.app .right #inputs #error1,#error2,#error3,#error4{
+     color: hsl(0, 100%, 74%) ;
+     text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+     body {
+          background-image: url("../images/bg-intro-mobile.png");
+     }
+     .app {
+          display: flex;
+          flex-direction: column;
+     
+     }
+     .app .left {
+       text-align: center;
+     padding: 0px;
+     margin-top: 50px;
+     margin-left: 0px;
+     
+     }
+     .app .left #Heading {
+          font-size: 40px;
+          }
+          .app .left #prg {
+          font-size: 20px;
+          }
+  .app .right {
+      
+      margin-right: 0px;
+      margin-top: 150px;
+               
+               
+          }
+          .app .right #inputs {
+            
+               margin-left: 20px;
+               width: 300px;
+             
+          }
+          .app .right #trytag {
+               margin-left: 30px;
+               width: 300px;
+               text-align: center;
+               }
+               .app .right #inputs input {
+                    width:260px;
+                    padding: 7px;
+                    
+                    
+                    }
+                    .app .right #inputs #claim-btn {
+                         width: 260px;
+                         height: 45px;
+                         margin-top: 20px;
+                         }
+
+
+
+   }
+
+
